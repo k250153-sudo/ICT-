@@ -1,47 +1,52 @@
 #include <iostream>
 using namespace std;
 
-class MealOrder {
+class Student {
 public:
-    string studentName;
-    string meals[3];
-    int mealCount;
+    string name;
+    string studentID;
+    string registeredCourses[5];
+    int courseCount;
 
-    MealOrder() {
-        mealCount = 0;
+    Student() {
+        courseCount = 0;
     }
 
-    void addMeal(string meal) {
-        if (mealCount < 3) {
-            meals[mealCount] = meal;
-            mealCount++;
-            cout << meal << " added. Slots remaining: " << 3 - mealCount << endl;
+    void addCourse(string course) {
+        if (courseCount < 5) {
+            registeredCourses[courseCount] = course;
+            courseCount++;
+            cout << course << " added. Slots remaining: " << 5 - courseCount << endl;
         } else {
-            cout << "Cannot add " << meal << ". Meal limit reached." << endl;
+            cout << "Cannot add " << course << ". Course limit reached." << endl;
         }
     }
 
-    void displayMeals() {
-        cout << "Student: " << studentName << endl;
-        cout << "Selected Meals: ";
-        for (int i = 0; i < mealCount; i++) {
-            cout << meals[i];
-            if (i < mealCount - 1) cout << ", ";
+    void displayCourses() {
+        cout << "Student Name: " << name << endl;
+        cout << "Student ID: " << studentID << endl;
+        cout << "Registered Courses: ";
+        for (int i = 0; i < courseCount; i++) {
+            cout << registeredCourses[i];
+            if (i < courseCount - 1) cout << ", ";
         }
         cout << endl;
     }
 };
 
 int main() {
-    MealOrder order;
-    order.studentName = "Ahmed";
+    Student s1;
+    s1.name = "Ahmed";
+    s1.studentID = "S123";
 
-    order.addMeal("Breakfast");
-    order.addMeal("Lunch");
-    order.addMeal("Dinner");
-    order.addMeal("Refreshments"); 
+    s1.addCourse("Calculus");
+    s1.addCourse("Physics");
+    s1.addCourse("PF");
+    s1.addCourse("FE");
+    s1.addCourse("ICT");
+    s1.addCourse("ICP"); // Will be rejected
 
-    order.displayMeals();
+    s1.displayCourses();
 
     return 0;
 }
