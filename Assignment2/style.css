@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+    background-color : lightgoldenrodyellow;
+}
+
+.banner{
+    width: 700px;
+    border: solid black 2px;
+    display: block;
+    margin: 0 auto;
+}
+.home-page{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: darkred;
+    margin-top:20px;
+}
+hr{
+    border: 1px solid darkred;
+    margin: 20px 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+a:hover {
+    color: #3498db;
+    text-decoration: underline;
+    transform: none;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}
+.foodimage{
+    float : right;
+    width: 400px;
+    border: 2px dashed brown;
+}
+.menu{
+      text-align: center;
+    margin-bottom: 20px;
+}
+.items h2{
+    color: darkred;
+}
+.items ul {
+    list-style: none;
+    margin-left: 40px;
+}
+
+.items ul li {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #444;
+}
+.contact-page{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
