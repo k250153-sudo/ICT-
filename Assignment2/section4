@@ -1,0 +1,118 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a4paper, left=2cm, right=2cm, top=1.5cm, bottom=3cm }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{natbib}
+
+\usepackage{etoolbox,fancyhdr,xcolor}
+\newcommand{\headrulecolor}[1]{\patchcmd{\headrule}{\hrule}{\color{#1}\hrule}{}{}}
+\newcommand{\footrulecolor}[1]{\patchcmd{\footrule}{\hrule}{\color{#1}\hrule}{}{}}
+\renewcommand{\headrulewidth}{1pt}
+\headrulecolor{red!100}%
+\renewcommand{\footrulewidth}{1pt}
+\footrulecolor{red!100}%
+
+\fancyhf{}
+\fancyhead[R]{\includegraphics[width=0.25\textwidth]{UoBLogo.png}}
+
+\fancyfoot[L]{Project: 2324RP001}
+\fancyfoot[C]{School of Civil, Aerospace and Design Engineering}
+\fancyfoot[R]{\thepage}
+
+\setlength{\headheight}{15mm}
+\pagestyle{fancy}
+
+\bibliographystyle{apalike}
+
+\usepackage{times}
+\begin{document}
+
+\noindent 
+\begin{center}
+\textbf{{\Large THE MARVELS OF DOLPHINS: INTELLIGENCE AND ECOLOGY}} \\
+\end{center}
+
+\noindent 
+\textbf{Author: Mudassir Imran,} \textit{University of Bristol, Bristol, U.K.}
+\\
+
+\noindent 
+\textbf{Research Supervisor: D. Duck,} \textit{University of Bristol, Bristol, U.K.}
+\\
+
+\noindent 
+\textbf{ABSTRACT: } Dolphins are among the most intelligent and socially complex marine animals. This paper reviews the biological, behavioral, and ecological aspects of dolphins, highlighting their communication, problem-solving abilities, and interactions with humans. Observational studies and recent research are summarized to provide insights into dolphin cognition and conservation. Human-induced threats and the role of marine conservation measures are also discussed.  
+
+\noindent 
+\textbf{KEYWORDS:} Dolphins, Intelligence, Marine Ecology, Communication, Conservation
+\\
+
+\noindent 
+\textbf{STATEMENT OF ORIGINALITY:} In this paper, a comprehensive review of dolphin behavior and ecology is conducted using recent research articles, highlighting their intelligence and conservation needs. 
+
+\section{INTRODUCTION}
+
+Dolphins are highly social marine mammals found in oceans worldwide. They belong to the family Delphinidae and are known for their agility, intelligence, and complex communication. Studies have shown that dolphins use a variety of vocalizations and body language to interact within pods and with humans. Understanding dolphins’ behavior provides insights into marine biodiversity and the impact of environmental changes.
+
+\subsection{Significance of Studying Dolphins}
+
+Studying dolphins is important for ecological, behavioral, and conservation reasons. Their social structures and intelligence offer unique opportunities to understand mammalian cognition. Additionally, dolphins are often considered indicator species for the health of marine ecosystems.
+
+\section{BEHAVIOR AND INTELLIGENCE}
+
+Dolphins demonstrate remarkable cognitive abilities. They can solve problems, recognize themselves in mirrors, and exhibit cooperative hunting strategies.
+
+\subsection{Communication}
+
+Dolphins use clicks, whistles, and body movements to communicate. Signature whistles act like names, enabling individual recognition within pods.
+
+\subsection{Social Structure}
+
+Pods can range from a few individuals to hundreds. Social bonds influence hunting, mating, and protection strategies.
+
+\section{CONSERVATION AND THREATS}
+
+Despite their intelligence, dolphins face numerous threats due to human activities:
+
+\begin{itemize}
+    \item Bycatch in fishing nets.
+    \item Habitat degradation due to pollution and coastal development.
+    \item Noise pollution affecting communication and navigation.
+    \item Climate change affecting prey availability and migration patterns.
+\end{itemize}
+
+Conservation measures, such as marine protected areas, sustainable fishing, and public awareness, are essential to ensure the survival of dolphin populations.
+
+\section{ECOLOGICAL IMPORTANCE}
+
+Dolphins are top predators and play a crucial role in maintaining healthy fish populations, which in turn supports the balance of marine ecosystems. Their presence indicates the overall health of ocean habitats.
+
+\section{FUTURE RESEARCH DIRECTIONS}
+
+Further research is needed to understand dolphin cognition, social behavior, and migration patterns. Advanced tracking technologies, long-term ecological studies, and comparative analyses with other marine mammals will enhance conservation strategies.
+
+\section{SUMMARY}
+
+The key points from this review are as follows:
+
+\begin{itemize}
+    \item Dolphins are highly intelligent and social marine mammals.
+    \item They communicate using complex vocalizations and demonstrate problem-solving abilities.
+    \item Human activities pose significant threats to their survival.
+    \item Conservation measures are critical for maintaining dolphin populations.
+\end{itemize}
+
+\section{ACKNOWLEDGEMENTS}
+
+The author wishes to thank Dr. D. Duck for supervision and guidance, and the various research teams whose studies were referenced in this paper.
+
+\section{REFERENCES}
+
+\bibliography{ResearchPaperBib}
+
+\end{document}
